@@ -10,7 +10,7 @@ const EmployeeList = () => {
   useEffect(() => {
     const fetchEmployees = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/');
+        const res = await axios.get('https://emp-backend-1ldy.onrender.com/');
         setEmployees(res.data.data); // Adjust if your API's response format differs
         setLoading(false);
       } catch (err) {
